@@ -8,13 +8,13 @@ function createSentence(me){
   const hello = 'Hey, my name is ' + me + '.' ;
   var speakSentence = function(){
     const continueSentence = hello + ' And your name is?';
-    console.log(hello);
+    console.log(continueSentence);
   };
-  return speakSentence;
+speakSentence();
 }
 
-var speakTheSentence = createSentence('Zack');
-speakTheSentence();
+ createSentence('Zack');
+
 
 
 

@@ -102,11 +102,14 @@ multiplyNums(5, 5, function(x, y){
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  if(list.includes(item)){
-    return cb(true);
-  } else {
-    return cb(false);
-  }
+
+  //below is commented out another way to do this
+  // if(list.includes(item)){
+  //   return cb(true);
+  // } else {
+  //   return cb(false);
+  // }
+  cb(list.includes(item))
 }
 
 contains('yo-yo', items, function(answer){
